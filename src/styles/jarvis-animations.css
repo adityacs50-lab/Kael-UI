@@ -1,0 +1,161 @@
+/* JARVIS-style animations for KAEL UI */
+
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes reverse-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes scanner-line {
+  0% {
+    transform: translateY(-50%) scaleX(0.3);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50%) scaleX(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-50%) scaleX(0.3);
+    opacity: 0.3;
+  }
+}
+
+@keyframes scanner-line-vertical {
+  0% {
+    transform: translateX(-50%) scaleY(0.3);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(-50%) scaleY(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateX(-50%) scaleY(0.3);
+    opacity: 0.3;
+  }
+}
+
+@keyframes scanner-diagonal {
+  0% {
+    transform: translateY(-50%) rotate(45deg) scaleX(0.3);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50%) rotate(45deg) scaleX(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-50%) rotate(45deg) scaleX(0.3);
+    opacity: 0.2;
+  }
+}
+
+@keyframes scanner-diagonal-reverse {
+  0% {
+    transform: translateY(-50%) rotate(-45deg) scaleX(0.3);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(-50%) rotate(-45deg) scaleX(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-50%) rotate(-45deg) scaleX(0.3);
+    opacity: 0.2;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 20s linear infinite;
+}
+
+.animate-reverse-spin {
+  animation: reverse-spin 30s linear infinite;
+}
+
+.animate-scanner-line {
+  animation: scanner-line 3s ease-in-out infinite;
+}
+
+.animate-scanner-line-vertical {
+  animation: scanner-line-vertical 3s ease-in-out infinite;
+}
+
+.animate-scanner-diagonal {
+  animation: scanner-diagonal 4s ease-in-out infinite;
+}
+
+.animate-scanner-diagonal-reverse {
+  animation: scanner-diagonal-reverse 4s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbit 12s linear infinite;
+}
+
+.animate-orbit-slow {
+  animation: orbit-slow 20s linear infinite;
+}
+
+.animate-orbit-reverse {
+  animation: orbit-reverse 15s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
