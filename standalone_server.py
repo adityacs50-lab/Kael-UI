@@ -24,7 +24,7 @@ WEATHER_ENABLED = True
 GEMINI_ENABLED = True
 
 # EMBEDDED API KEY - Replace with your actual key
-GEMINI_API_KEY = "AIzaSyByRG-yrfQMXF4fPI9LJU-EggDBOi70MIE"
+GEMINI_API_KEY = "your-api-key"
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent"
 
 # Check if text-to-speech is available
